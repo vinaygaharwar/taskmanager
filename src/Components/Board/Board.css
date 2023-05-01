@@ -1,0 +1,109 @@
+.board {
+  min-width: 290px;
+  width: 290px;
+  max-height: 100%;
+  flex-basis: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* background-color: lightgray; */
+  border-radius: 10px;
+}
+
+.board_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board_header_title {
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.board_header_title span {
+  color: rgb(145, 145, 145);
+}
+
+.board_header_title_more {
+  cursor: pointer;
+  position: relative;
+}
+
+.board_dropdown {
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  width: 150px !important;
+  cursor: default;
+}
+.board_dropdown p {
+  border-bottom: 1px solid #f8f8f8;
+  cursor: pointer;
+}
+
+.board_cards {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.board_add-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 1px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  text-align: center;
+}
+.board_add-card_edit {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.board-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* height: 100%;
+  min-height: 100vh; */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.board-modal-altamas{
+  position: fixed;
+  top: 40px;
+  left: 0;
+  /* height: 100%;
+  min-height: 100vh; */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.board-modal-complete{
+  position: fixed;
+  top: 40px;
+  left: 0;
+  /* height: 100%;
+  min-height: 100vh; */
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+
+}
